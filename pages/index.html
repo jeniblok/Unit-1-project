@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--
+Programmer: Jenn Woldt
+Date: 09/19/2024
+Project: Unit 1
+-->
+<html lang="en">
+<head>
+<title>Jenn's Portfolio</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/layout.css">
+<style>
+
+    /* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+ 
+}
+
+/* Left and right column */
+.column.side {
+  width: 30%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 40%;
+  height: 30%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: bold;
+  font-size: 40px;
+  background-color: rgb(183, 119, 40);
+  padding-left: 1%;
+  padding-right: 4%;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: rgb(183, 119, 40);
+  margin-top: 100px;
+}
+
+</style>
+</head>
+
+<body>
+
+    <!--Use the header area for a website name or logo-->
+    <header>
+      <h1>Jenn's Portfolio</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="intro.html">Intro</a></li>
+                <li><a href="blacksmithing.html">Blacksmithing</a></li>
+                <li><a href="music.html">Music</a></li>
+            </ul>
+        </nav>
+      
+    
+    </header>
+
+
+    <!--Use the nav area to add hyperlinks to other pages within the website-->
+   
+
+    <!--Us the main area to add the main content of the webpage-->
+    <main>
+        <div class="row">
+            <div class="column side">
+                <h1>Renaissance Festival 2024</h1>
+                <img src="../images/pirate.jpg" alt="Jenn Renfaire" style="width: 500px;height:300px;">
+            </div>
+        
+            <div class="column middle">  
+                <h1>About me</h1>
+                <p>My name is Jenn Woldt. I am a mother, nerd and blacksmith. Follow the navigation bar to learn more about me!</p>
+            </div>
+               
+                    
+                <div class="column side">
+                    <h1>My family at our wedding.</h1>
+                    <img src="../images/Family.jpg" alt="My Family" style="width: 500px;height:300px;">
+                </div>
+    </main>
+
+    <!--Use the footer area to add webpage footer content-->
+    
+    <div class="footer">
+        <h2>Welcome to my site!</h2>
+      </div>
+</body>
+</html>

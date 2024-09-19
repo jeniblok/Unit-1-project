@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--
+Programmer: Jenn Woldt
+Date: 09/19/2024
+Project: Unit 1
+-->
+
+<html lang="en">
+<head>
+    <title>Jenn's Portfolio</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/layout.css">
+    <style>
+
+.column {
+  float: left;
+  padding: 10px;
+ 
+}
+
+/* Left and right column */
+.column.side {
+  width: 30%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 40%;
+  height: 50%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: bold;
+  font-size: 40px;
+  padding-left: 5%;
+ 
+}
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+p{
+    font-size: 40px;
+    text-align: center;
+    background: rgba(255, 0, 255, 0.449);
+}
+
+
+    </style>
+</head>
+<body>
+
+    <!--Use the header area for a website name or logo-->
+    <header>
+      <h1>Jenn's Portfolio</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="intro.html">Intro</a></li>
+                <li><a href="blacksmithing.html">Blacksmithing</a></li>
+                <li><a href="music.html">Music</a></li>
+            </ul>
+        </nav> 
+    </header>
+
+    <!--Us the main area to add the main content of the webpage-->
+    <main>
+        
+        <h1>Songs that have imapcted my life greatly!</h1>
+
+        <div class="row">
+            <div class="column side">
+            <h1>Bohemian Rhapsody, By Queen</h1>
+            <p>This song means a lot to me. 
+            To me it means dying to yourself and that life is hard. 
+            Once you embrace life it gets more fun.</p></div>
+
+                <div class="column middle">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/axAtWjn3MfI?si=S1nURxI9TAmc31VZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>         
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Xb6A0lwA6rc?si=CGNHcn-Sf34Vy-Ng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>   
+                </div>
+                    <div class="column side">          
+                    <h1>You Got It, By Vedo</h1>
+                    <p>I have taken some hits in life and this song reminds me to keep going. 
+                    My favorite line is "go get that degree".</p></div>
+    </main>
+
+    <!--Use the footer area to add webpage footer content-->
+    <div class="footer">
+        <h2>Welcome to my site!</h2>
+      </div>
+
+</body>
+</html>
